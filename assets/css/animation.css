@@ -1,0 +1,561 @@
+/* =====================================================
+   NUSA TIRTA TEKNOLOGI
+   animation.css
+====================================================== */
+
+/* ==========================================
+    GLOBAL TRANSITION
+========================================== */
+
+*{
+    transition:
+        background .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ==========================================
+    FLOAT IMAGE
+========================================== */
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ==========================================
+    FLOAT SHAPE
+========================================== */
+
+@keyframes floatShape{
+
+    0%{
+
+        transform:translateY(0px) rotate(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-35px) rotate(180deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0px) rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+    SCROLL LINE
+========================================== */
+
+@keyframes scrollLine{
+
+    0%{
+
+        transform:scaleY(.2);
+
+        transform-origin:top;
+
+    }
+
+    50%{
+
+        transform:scaleY(1);
+
+        transform-origin:top;
+
+    }
+
+    100%{
+
+        transform:scaleY(.2);
+
+        transform-origin:bottom;
+
+    }
+
+}
+
+/* ==========================================
+    FADE UP
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+    FADE LEFT
+========================================== */
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ==========================================
+    FADE RIGHT
+========================================== */
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ==========================================
+    ZOOM
+========================================== */
+
+@keyframes zoom{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+    ROTATE
+========================================== */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+    GRADIENT
+========================================== */
+
+@keyframes gradient{
+
+    0%{
+
+        background-position:left;
+
+    }
+
+    50%{
+
+        background-position:right;
+
+    }
+
+    100%{
+
+        background-position:left;
+
+    }
+
+}
+
+/* ==========================================
+    MARQUEE
+========================================== */
+
+@keyframes marquee{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* ==========================================
+    PULSE
+========================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+    RIPPLE
+========================================== */
+
+@keyframes ripple{
+
+    from{
+
+        transform:scale(.5);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:scale(2.5);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+    SHIMMER
+========================================== */
+
+@keyframes shimmer{
+
+    from{
+
+        background-position:-300px;
+
+    }
+
+    to{
+
+        background-position:300px;
+
+    }
+
+}
+
+/* ==========================================
+    SPIN
+========================================== */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+    FLOATING ICON
+========================================== */
+
+.floating{
+
+    animation:floatImage 5s ease-in-out infinite;
+
+}
+
+.rotate{
+
+    animation:rotate 12s linear infinite;
+
+}
+
+.pulse{
+
+    animation:pulse 2.5s infinite;
+
+}
+
+/* ==========================================
+    HOVER SCALE
+========================================== */
+
+.hover-scale:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+}
+
+/* ==========================================
+    HOVER GLOW
+========================================== */
+
+.hover-glow:hover{
+
+    box-shadow:
+
+        0 25px 60px rgba(11,46,109,.18);
+
+}
+
+/* ==========================================
+    BUTTON SHIMMER
+========================================== */
+
+.btn-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:60%;
+
+    height:100%;
+
+    transform:skewX(-25deg);
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.55),
+
+        transparent
+
+    );
+
+}
+
+.btn-primary:hover::before{
+
+    left:130%;
+
+    transition:1s;
+
+}
+
+/* ==========================================
+    IMAGE HOVER
+========================================== */
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:.7s;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+    REVEAL
+========================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+    DELAY
+========================================== */
+
+.delay-1{
+
+    transition-delay:.1s;
+
+}
+
+.delay-2{
+
+    transition-delay:.2s;
+
+}
+
+.delay-3{
+
+    transition-delay:.3s;
+
+}
+
+.delay-4{
+
+    transition-delay:.4s;
+
+}
+
+.delay-5{
+
+    transition-delay:.5s;
+
+}
+
+/* ==========================================
+    LOADER
+========================================== */
+
+.loader-circle{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:5px solid rgba(11,46,109,.15);
+
+    border-top-color:var(--primary);
+
+    animation:spin 1s linear infinite;
+
+}
+
+/* ==========================================
+    BACKGROUND BLUR
+========================================== */
+
+.blur-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.25;
+
+}
