@@ -146,7 +146,7 @@
         CONTAINER
     ====================================== */
 
-    --container-width:1120px;
+    --container-width:1240px;
     --container-padding:20px;
 
     /* =====================================
@@ -174,3 +174,5 @@
     --z-fixed:50;
 
 }
+
+
