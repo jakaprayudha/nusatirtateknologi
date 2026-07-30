@@ -487,3 +487,162 @@ h3{
     }
 
 }
+
+@media (max-width:768px){
+
+.logo img{
+
+    width:46px;
+
+    height:auto;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.logo-text p{
+
+    font-size:11px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+}
+/* =====================================================
+   MOBILE HEADER
+====================================================== */
+
+@media (max-width:768px){
+
+    /* Header */
+
+    .header{
+
+        padding:6px 0;
+
+    }
+
+    .navbar{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+        min-height:64px;
+
+    }
+
+    /* Logo */
+
+    .logo{
+
+        display:flex;
+
+        align-items:center;
+
+        gap:10px;
+
+        flex:1;
+
+        min-width:0;
+
+        text-decoration:none;
+
+    }
+
+    .logo img{
+
+        width:38px !important;
+
+        height:38px !important;
+
+        object-fit:contain;
+
+        flex-shrink:0;
+
+    }
+
+    .logo-text{
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        min-width:0;
+
+        overflow:hidden;
+
+    }
+
+    .logo-text h3{
+
+        margin:0;
+
+        font-size:18px;
+
+        line-height:1.1;
+
+        font-weight:700;
+
+        white-space:nowrap;
+
+        overflow:hidden;
+
+        text-overflow:ellipsis;
+
+    }
+
+    .logo-text span{
+
+    display:block;
+
+    font-size:10px;
+
+    line-height:1.2;
+
+    color:#6b7280;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+    /* Hamburger */
+
+    .menu-toggle{
+
+        width:42px;
+
+        height:42px;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        border-radius:12px;
+
+        font-size:22px;
+
+        flex-shrink:0;
+
+        margin-left:12px;
+
+    }
+
+}

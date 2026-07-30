@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initMobileMenu();
     initDropdown();
     initActiveSection();
-    initHideNavbar();
+    initStickyNavbar();
 
 });
 
@@ -34,9 +34,7 @@ function initMobileMenu(){
 
     });
 
-    document.querySelectorAll(".nav-menu a")
-
-    .forEach(link=>{
+    document.querySelectorAll(".nav-menu a").forEach(link=>{
 
         link.addEventListener("click",()=>{
 
@@ -48,7 +46,9 @@ function initMobileMenu(){
 
     });
 
-}/* ==========================================
+}
+
+/* ==========================================
     CLICK OUTSIDE
 ========================================== */
 
@@ -60,13 +60,8 @@ document.addEventListener("click",(e)=>{
     if(!menu || !toggle) return;
 
     if(
-
-        !menu.contains(e.target)
-
-        &&
-
+        !menu.contains(e.target) &&
         !toggle.contains(e.target)
-
     ){
 
         menu.classList.remove("active");
@@ -75,15 +70,15 @@ document.addEventListener("click",(e)=>{
 
     }
 
-});/* ==========================================
+});
+
+/* ==========================================
     DROPDOWN
 ========================================== */
 
 function initDropdown(){
 
-    const dropdowns=document.querySelectorAll(".has-dropdown");
-
-    dropdowns.forEach(item=>{
+    document.querySelectorAll(".has-dropdown").forEach(item=>{
 
         item.addEventListener("mouseenter",()=>{
 
@@ -103,7 +98,9 @@ function initDropdown(){
 
     });
 
-}/* ==========================================
+}
+
+/* ==========================================
     ACTIVE SECTION
 ========================================== */
 
@@ -111,25 +108,21 @@ function initActiveSection(){
 
     const sections=document.querySelectorAll("section[id]");
 
-    if(sections.length===0) return;
+    if(!sections.length) return;
 
     window.addEventListener("scroll",()=>{
 
-        const scroll=window.scrollY+120;
+        const scroll=window.scrollY+130;
 
         sections.forEach(section=>{
 
             const top=section.offsetTop;
-
             const height=section.offsetHeight;
-
             const id=section.getAttribute("id");
 
             if(scroll>=top && scroll<top+height){
 
-                document.querySelectorAll(".nav-menu a")
-
-                .forEach(link=>{
+                document.querySelectorAll(".nav-menu a").forEach(link=>{
 
                     link.classList.remove("active");
 
@@ -147,47 +140,39 @@ function initActiveSection(){
 
     });
 
-}/* ==========================================
-    HIDE NAVBAR
+}
+
+/* ==========================================
+    STICKY NAVBAR
 ========================================== */
 
-function initHideNavbar(){
+function initStickyNavbar(){
 
     const header=document.querySelector(".header");
 
     if(!header) return;
 
-    let lastScroll=0;
-
     window.addEventListener("scroll",()=>{
 
-        const current=window.pageYOffset;
+        if(window.scrollY>40){
 
-        if(current>120){
+            header.classList.add("scrolled");
 
-            if(current>lastScroll){
+        }else{
 
-                header.style.transform="translateY(-100%)";
-
-            }else{
-
-                header.style.transform="translateY(0)";
-
-            }
+            header.classList.remove("scrolled");
 
         }
 
-        lastScroll=current;
-
     });
 
-}/* ==========================================
+}
+
+/* ==========================================
     MOBILE DROPDOWN
 ========================================== */
 
-document.querySelectorAll(".dropdown-toggle")
-
-.forEach(button=>{
+document.querySelectorAll(".dropdown-toggle").forEach(button=>{
 
     button.addEventListener("click",(e)=>{
 
@@ -199,19 +184,19 @@ document.querySelectorAll(".dropdown-toggle")
 
     });
 
-});/* ==========================================
+});
+
+/* ==========================================
     RESIZE
 ========================================== */
 
 window.addEventListener("resize",()=>{
 
-    if(window.innerWidth > 991){
+    if(window.innerWidth>991){
 
         document.body.classList.remove("menu-open");
 
-        document.querySelector(".nav-menu")
-
-        ?.classList.remove("active");
+        document.querySelector(".nav-menu")?.classList.remove("active");
 
     }
 

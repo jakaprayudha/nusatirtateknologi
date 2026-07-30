@@ -115,14 +115,37 @@ function initSmoothScroll(){
 }/* ==========================================
     REVEAL
 ========================================== */
+/* ==========================================
+    REVEAL
+========================================== */
 
 function initReveal(){
 
-    const items=document.querySelectorAll(".reveal");
+    const items = document.querySelectorAll(".reveal");
 
-    if(items.length===0) return;
+    if(items.length === 0) return;
 
-    const observer=new IntersectionObserver(entries=>{
+    // Mobile & Tablet
+    if(window.innerWidth <= 768){
+
+        items.forEach(item=>{
+
+            item.classList.add("active");
+
+            item.style.opacity = "1";
+
+            item.style.transform = "none";
+
+            item.style.transition = "none";
+
+        });
+
+        return;
+
+    }
+
+    // Desktop
+    const observer = new IntersectionObserver(entries=>{
 
         entries.forEach(entry=>{
 
@@ -142,7 +165,8 @@ function initReveal(){
 
     items.forEach(item=>observer.observe(item));
 
-}/* ==========================================
+}
+/* ==========================================
     BACK TO TOP
 ========================================== */
 
