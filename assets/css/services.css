@@ -1,0 +1,1103 @@
+
+/* =====================================================
+   SERVICES PAGE
+   CV NUSA TIRTA TEKNOLOGI
+======================================================*/
+
+/* =====================================================
+    HERO
+======================================================*/
+
+.services-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 100px;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(30,79,159,.08),
+    transparent 35%),
+
+    radial-gradient(circle at bottom left,
+    rgba(255,107,0,.08),
+    transparent 40%),
+
+    #fff;
+
+}
+
+.services-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    border-radius:50%;
+
+    background:rgba(30,79,159,.05);
+
+    right:-180px;
+
+    top:-180px;
+
+}
+
+.services-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,107,0,.05);
+
+    left:-180px;
+
+    bottom:-180px;
+
+}
+
+.services-hero .page-hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.services-hero .page-hero-image img{
+
+    width:100%;
+
+    max-width:560px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 25px 55px rgba(0,0,0,.15));
+
+}
+
+/* =====================================================
+    OVERVIEW
+======================================================*/
+
+.services-overview{
+
+    padding:110px 0;
+
+    background:#F8FAFC;
+
+}
+
+.overview-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.overview-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.overview-card i{
+
+    width:85px;
+
+    height:85px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:22px;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+.overview-card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.overview-card p{
+
+    color:var(--gray-600);
+
+    line-height:1.8;
+
+}
+
+/* =====================================================
+    SERVICE GRID
+======================================================*/
+
+.services-list{
+
+    padding:110px 0;
+
+    background:#fff;
+
+}
+
+.services-grid-large{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.service-large-card{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s;
+
+}
+
+.service-large-card:hover{
+
+    transform:translateY(-14px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.service-large-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.service-large-card h3{
+
+    padding:30px 30px 15px;
+
+    font-size:26px;
+
+}
+
+.service-large-card p{
+
+    padding:0 30px 35px;
+
+    color:var(--gray-600);
+
+    line-height:1.8;
+
+}/* =====================================================
+    SERVICE DETAIL
+======================================================*/
+
+.service-detail{
+
+    padding:120px 0;
+
+    background:#fff;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.service-detail.bg-light{
+
+    background:#F8FAFC;
+
+}
+
+.service-detail-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.service-detail-wrapper.reverse{
+
+    direction:rtl;
+
+}
+
+.service-detail-wrapper.reverse>*{
+
+    direction:ltr;
+
+}
+
+/* =====================================================
+    IMAGE
+======================================================*/
+
+.service-image{
+
+    position:relative;
+
+}
+
+.service-image img{
+
+    width:100%;
+
+    max-width:580px;
+
+    border-radius:32px;
+
+    box-shadow:0 25px 60px rgba(15,23,42,.12);
+
+    transition:.45s;
+
+}
+
+.service-image img:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.service-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(30,79,159,.08);
+
+    border-radius:40px;
+
+    left:-35px;
+
+    top:-35px;
+
+    z-index:-1;
+
+}
+
+.service-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+
+    height:170px;
+
+    background:rgba(255,107,0,.08);
+
+    border-radius:30px;
+
+    right:-30px;
+
+    bottom:-30px;
+
+    z-index:-1;
+
+}
+
+/* =====================================================
+    CONTENT
+======================================================*/
+
+.service-content{
+
+    position:relative;
+
+}
+
+.service-content .section-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:rgba(30,79,159,.08);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+    margin-bottom:22px;
+
+}
+
+.service-content h2{
+
+    font-size:46px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+    color:var(--gray-900);
+
+}
+
+.service-content p{
+
+    color:var(--gray-600);
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+/* =====================================================
+    FEATURE LIST
+======================================================*/
+
+.service-feature-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.service-feature-list div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#fff;
+
+    border:1px solid #EEF2F7;
+
+    padding:16px 20px;
+
+    border-radius:18px;
+
+    font-weight:500;
+
+    color:var(--gray-700);
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.service-feature-list div:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(30,79,159,.25);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.service-feature-list i{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+/* =====================================================
+    SPECIAL ICON COLORS
+======================================================*/
+
+.service-feature-list .bi-stars{
+
+    background:var(--gradient-orange);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.service-feature-list .bi-heart-pulse-fill{
+
+    color:#ef4444;
+
+}
+
+.service-feature-list .bi-cloud-check-fill{
+
+    color:#2563eb;
+
+}
+
+.service-feature-list .bi-cpu-fill{
+
+    color:#0ea5e9;
+
+}
+
+.service-feature-list .bi-geo-alt-fill{
+
+    color:#22c55e;
+
+}
+
+.service-feature-list .bi-building{
+
+    color:#7c3aed;
+
+}
+
+.service-feature-list .bi-shield-lock-fill{
+
+    color:#f59e0b;
+
+}
+/* =====================================================
+    IMPLEMENTATION PROCESS
+======================================================*/
+
+.implementation-process{
+
+    padding:120px 0;
+
+    background:linear-gradient(
+        180deg,
+        #fff,
+        #F8FAFC
+    );
+
+}
+
+.process-horizontal{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:25px;
+
+    position:relative;
+
+}
+
+.process-horizontal::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:7%;
+
+    right:7%;
+
+    top:40px;
+
+    height:3px;
+
+    background:linear-gradient(
+        to right,
+        var(--primary),
+        var(--secondary)
+    );
+
+    z-index:0;
+
+}
+
+.process-item{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+}
+
+.process-item i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:30px;
+
+    border-radius:50%;
+
+    box-shadow:0 15px 35px rgba(11,46,109,.18);
+
+}
+
+.process-item h4{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/* =====================================================
+    WHY US
+======================================================*/
+
+.why-services{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.why-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.why-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    text-align:center;
+
+    border:1px solid #EEF2F7;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.why-card i{
+
+    width:90px;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:22px;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:36px;
+
+}
+
+.why-card h3{
+
+    font-size:24px;
+
+}/* =====================================================
+    FAQ
+======================================================*/
+
+.faq{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.faq-wrapper{
+
+    max-width:900px;
+
+    margin:70px auto 0;
+
+}
+
+.faq-wrapper details{
+
+    background:#fff;
+
+    margin-bottom:22px;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.faq-wrapper summary{
+
+    cursor:pointer;
+
+    padding:25px 35px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    list-style:none;
+
+}
+
+.faq-wrapper summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.faq-wrapper summary::after{
+
+    content:"+";
+
+    float:right;
+
+    font-size:28px;
+
+    color:var(--primary);
+
+}
+
+.faq-wrapper details[open] summary::after{
+
+    content:"−";
+
+}
+
+.faq-wrapper p{
+
+    padding:0 35px 30px;
+
+    color:var(--gray-600);
+
+    line-height:1.8;
+
+}/* =====================================================
+    CTA
+======================================================*/
+
+.cta{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.cta-box{
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    border-radius:40px;
+
+    text-align:center;
+
+    padding:90px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    right:-160px;
+
+    top:-160px;
+
+}
+
+.cta-box span{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    color:rgba(255,255,255,.8);
+
+}
+
+.cta-box h2{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+    color:#fff;
+
+}
+
+.cta-box p{
+
+    font-size:18px;
+
+    color:rgba(255,255,255,.9);
+
+    margin-bottom:45px;
+
+}
+
+.cta .hero-buttons{
+
+    justify-content:center;
+
+}
+
+/* =====================================================
+    RESPONSIVE
+======================================================*/
+
+@media(max-width:1200px){
+
+.services-grid-large{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.overview-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.process-horizontal{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.why-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.service-detail-wrapper{
+
+    gap:60px;
+
+}
+
+}
+
+@media(max-width:991px){
+
+.service-detail-wrapper,
+
+.service-detail-wrapper.reverse{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.service-detail-wrapper.reverse{
+
+    direction:ltr;
+
+}
+
+.service-image{
+
+    text-align:center;
+
+}
+
+.service-image img{
+
+    max-width:450px;
+
+}
+
+.process-horizontal{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.services-hero{
+
+    padding:100px 0 70px;
+
+}
+
+.services-hero .page-hero-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+    text-align:center;
+
+}
+
+.overview-grid,
+
+.services-grid-large,
+
+.why-grid,
+
+.service-feature-list{
+
+    grid-template-columns:1fr;
+
+}
+
+.process-horizontal{
+
+    grid-template-columns:1fr;
+
+}
+
+.process-horizontal::before{
+
+    display:none;
+
+}
+
+.process-item{
+
+    margin-bottom:20px;
+
+}
+
+.service-detail{
+
+    padding:80px 0;
+
+}
+
+.service-content h2{
+
+    font-size:34px;
+
+}
+
+.cta-box{
+
+    padding:60px 30px;
+
+}
+
+.cta-box h2{
+
+    font-size:34px;
+
+}
+
+.faq-wrapper summary{
+
+    font-size:18px;
+
+    padding:22px 24px;
+
+}
+
+.faq-wrapper p{
+
+    padding:0 24px 24px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.service-image img{
+
+    border-radius:20px;
+
+}
+
+.overview-card,
+
+.service-large-card,
+
+.why-card{
+
+    border-radius:22px;
+
+}
+
+.service-content h2{
+
+    font-size:30px;
+
+}
+
+}
