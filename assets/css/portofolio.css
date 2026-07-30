@@ -1,0 +1,1257 @@
+
+/* =====================================================
+   PORTFOLIO PAGE
+   CV NUSA TIRTA TEKNOLOGI
+======================================================*/
+
+/* =====================================================
+    HERO
+======================================================*/
+
+.portfolio-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 100px;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(30,79,159,.08),
+    transparent 35%),
+
+    radial-gradient(circle at bottom left,
+    rgba(255,107,0,.08),
+    transparent 40%),
+
+    #ffffff;
+
+}
+
+.portfolio-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    border-radius:50%;
+
+    background:rgba(30,79,159,.05);
+
+    right:-180px;
+
+    top:-180px;
+
+}
+
+.portfolio-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,107,0,.05);
+
+    left:-160px;
+
+    bottom:-160px;
+
+}
+
+.portfolio-hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.portfolio-hero-image{
+
+    text-align:center;
+
+}
+
+.portfolio-hero-image img{
+
+    width:100%;
+
+    max-width:580px;
+
+    filter:drop-shadow(0 25px 60px rgba(0,0,0,.12));
+
+}
+
+.portfolio-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:45px;
+
+}
+
+.portfolio-stats div{
+
+    flex:1;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.portfolio-stats h3{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+
+}
+
+.portfolio-stats span{
+
+    color:var(--gray-600);
+
+    font-size:14px;
+
+}
+
+/* =====================================================
+    ACHIEVEMENT
+======================================================*/
+
+.achievement{
+
+    padding:110px 0;
+
+    background:#F8FAFC;
+
+}
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.achievement-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.achievement-card i{
+
+    width:82px;
+
+    height:82px;
+
+    border-radius:22px;
+
+    background:var(--gradient-primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.achievement-card h2{
+
+    font-size:44px;
+
+    margin-bottom:12px;
+
+    color:var(--primary);
+
+}
+
+.achievement-card span{
+
+    color:var(--gray-600);
+
+}/* =====================================================
+    FEATURED PROJECT
+======================================================*/
+
+.featured-project{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.featured-project-card{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    padding:60px;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #F8FAFC
+    );
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-md);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.featured-project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(30,79,159,.05);
+
+    top:-180px;
+
+    right:-120px;
+
+}
+
+.featured-project-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.project-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(30,79,159,.08);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.featured-project-content h2{
+
+    font-size:50px;
+
+    margin-bottom:22px;
+
+}
+
+.featured-project-content p{
+
+    color:var(--gray-600);
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.featured-project-image{
+
+    text-align:center;
+
+}
+
+.featured-project-image img{
+
+    width:100%;
+
+    max-width:560px;
+
+    transition:.4s;
+
+}
+
+.featured-project-card:hover .featured-project-image img{
+
+    transform:scale(1.03);
+
+}
+
+/* =====================================================
+    PROJECT TAGS
+======================================================*/
+
+.project-features{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+.project-features span{
+
+    padding:10px 18px;
+
+    background:#EEF4FF;
+
+    color:var(--primary);
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* =====================================================
+    METRICS
+======================================================*/
+
+.project-metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-bottom:35px;
+
+}
+
+.project-metrics div{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    border:1px solid #EEF2F7;
+
+}
+
+.project-metrics h3{
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.project-metrics span{
+
+    color:var(--gray-600);
+
+    font-size:14px;
+
+}/* =====================================================
+    PORTFOLIO FILTER
+======================================================*/
+
+.portfolio-filter{
+
+    padding:80px 0 40px;
+
+    background:#F8FAFC;
+
+}
+
+.filter-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.filter-wrapper button{
+
+    border:none;
+
+    background:#fff;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.filter-wrapper button:hover,
+
+.filter-wrapper button.active{
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+}
+
+/* =====================================================
+    PORTFOLIO SHOWCASE
+======================================================*/
+
+.portfolio-showcase{
+
+    padding:80px 0 120px;
+
+    background:#F8FAFC;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+    gap:35px;
+
+}
+
+/* =====================================================
+    PORTFOLIO CARD
+======================================================*/
+
+.portfolio-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid #EEF2F7;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+/* =====================================================
+    IMAGE
+======================================================*/
+
+.portfolio-image{
+
+    height:240px;
+
+    background:#F8FAFC;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    padding:20px;
+
+}
+
+.portfolio-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.portfolio-card:hover .portfolio-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* =====================================================
+    BODY
+======================================================*/
+
+.portfolio-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+.portfolio-category{
+
+    display:inline-flex;
+
+    align-self:flex-start;
+
+    padding:9px 18px;
+
+    border-radius:999px;
+
+    background:rgba(30,79,159,.08);
+
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.6px;
+
+}
+
+.portfolio-body h3{
+
+    margin:18px 0;
+
+    font-size:28px;
+
+    line-height:1.3;
+
+    min-height:72px;
+
+}
+
+.portfolio-body p{
+
+    color:var(--gray-600);
+
+    line-height:1.8;
+
+    min-height:90px;
+
+}
+
+/* =====================================================
+    TAG
+======================================================*/
+
+.portfolio-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:25px 0;
+
+}
+
+.portfolio-tags span{
+
+    padding:8px 14px;
+
+    background:#EEF4FF;
+
+    color:var(--primary);
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/* =====================================================
+    LINK
+======================================================*/
+
+.portfolio-body a{
+
+    margin-top:auto;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.portfolio-body a:hover{
+
+    color:var(--secondary);
+
+}
+
+.portfolio-body a i{
+
+    transition:.3s;
+
+}
+
+.portfolio-body a:hover i{
+
+    transform:translateX(8px);
+
+}/* =====================================================
+    TRUSTED CLIENTS
+======================================================*/
+
+.trusted-clients{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.client-group{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.client-category{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s;
+
+}
+
+.client-category:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.client-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:28px;
+
+}
+
+.client-title i{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:28px;
+
+}
+
+.client-title h3{
+
+    margin:0;
+
+}
+
+.client-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.client-item{
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+    color:var(--gray-700);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.client-item:hover{
+
+    background:#EEF4FF;
+
+    color:var(--primary);
+
+    transform:translateX(8px);
+
+}/* =====================================================
+    IMPLEMENTATION
+======================================================*/
+
+.implementation{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.implementation-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.implementation-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    border:1px solid #EEF2F7;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s;
+
+}
+
+.implementation-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.step{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:22px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.implementation-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.implementation-card p{
+
+    color:var(--gray-600);
+
+    line-height:1.8;
+
+}/* =====================================================
+    TECHNOLOGY
+======================================================*/
+
+.portfolio-tech{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.tech-badge{
+
+    margin-top:60px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.tech-badge span{
+
+    padding:14px 24px;
+
+    border-radius:999px;
+
+    background:#EEF4FF;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.tech-badge span:hover{
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+}/* =====================================================
+    RESPONSIVE
+======================================================*/
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+.portfolio-hero-wrapper,
+
+.featured-project-card{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+    text-align:center;
+
+}
+
+.achievement-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.client-group{
+
+    grid-template-columns:1fr;
+
+}
+
+.implementation-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.portfolio-hero{
+
+    padding-top:140px;
+
+}
+
+.portfolio-stats{
+
+    flex-wrap:wrap;
+
+}
+
+.project-metrics{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.portfolio-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.achievement-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.implementation-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.portfolio-stats{
+
+    flex-direction:column;
+
+}
+
+.featured-project-card{
+
+    padding:35px;
+
+}
+
+.featured-project-content h2{
+
+    font-size:34px;
+
+}
+
+.portfolio-body{
+
+    padding:24px;
+
+}
+
+.portfolio-body h3{
+
+    font-size:24px;
+
+    min-height:auto;
+
+}
+
+.portfolio-body p{
+
+    min-height:auto;
+
+}
+
+.filter-wrapper{
+
+    justify-content:flex-start;
+
+    overflow-x:auto;
+
+    flex-wrap:nowrap;
+
+    padding-bottom:8px;
+
+    scrollbar-width:none;
+
+}
+
+.filter-wrapper::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.filter-wrapper button{
+
+    white-space:nowrap;
+
+}
+
+.client-category{
+
+    padding:28px;
+
+}
+
+.client-title{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.tech-badge{
+
+    justify-content:flex-start;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.portfolio-hero-content h1{
+
+    font-size:30px;
+
+}
+
+.portfolio-stats h3{
+
+    font-size:28px;
+
+}
+
+.featured-project-card{
+
+    padding:28px;
+
+}
+
+.project-features{
+
+    gap:8px;
+
+}
+
+.project-features span{
+
+    font-size:11px;
+
+}
+
+}
+/* ==========================================
+    SECTION TITLE
+========================================== */
+
+.section-title{
+
+    max-width:900px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:rgba(11,46,109,.08);
+
+    color:var(--primary);
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    margin-bottom:22px;
+
+}
+
+.section-title p{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:var(--gray-600);
+
+}
